@@ -1,0 +1,393 @@
+{
+  "skills": [
+    {
+      "category": "Programming Languages & Scripting",
+      "sub_skills": [
+        "python",
+        "java",
+        "c++",
+        "javascript",
+        "c",
+        "vba",
+        "shell scripting",
+        "perl",
+        "ruby",
+        "go",
+        "kotlin",
+        "swift"
+      ]
+    },
+    {
+      "category": "Web & Software Development",
+      "sub_skills": [
+        "react",
+        "node.js",
+        "html",
+        "css",
+        "flask",
+        "django",
+        "api development",
+        "ui/ux design",
+        "wireframing",
+        "prototyping tools (e.g., figma, sketch)",
+        "user research",
+        "human-computer interaction (hci)",
+        "api management",
+        "microservices",
+        "system integration"
+      ]
+    },
+    {
+      "category": "Data Science & Artificial Intelligence",
+      "sub_skills": [
+        "machine learning",
+        "data analysis",
+        "tensorflow",
+        "pytorch",
+        "mathematical modeling",
+        "data visualization",
+        "computer vision",
+        "natural language processing (nlp)",
+        "deep learning",
+        "reinforcement learning",
+        "big data",
+        "hadoop",
+        "spark",
+        "kafka",
+        "data warehousing",
+        "etl",
+        "business intelligence (bi)",
+        "tableau",
+        "power bi",
+        "numerical simulation"
+      ]
+    },
+    {
+      "category": "Databases & Data Management",
+      "sub_skills": [
+        "sql",
+        "nosql databases",
+        "mongodb",
+        "cassandra"
+      ]
+    },
+    {
+      "category": "Cloud Platforms & DevOps",
+      "sub_skills": [
+        "docker",
+        "kubernetes",
+        "cloud computing",
+        "aws",
+        "azure",
+        "google cloud platform (gcp)",
+        "devops",
+        "container orchestration",
+        "site reliability engineering (sre)",
+        "incident management",
+        "disaster recovery",
+        "edge computing"
+      ]
+    },
+    {
+      "category": "Version Control & Operating Systems",
+      "sub_skills": [
+        "git",
+        "linux"
+      ]
+    },
+    {
+      "category": "CAD & Simulation Software",
+      "sub_skills": [
+        "autocad",
+        "solidworks",
+        "matlab",
+        "ansys",
+        "revit",
+        "catia",
+        "simulation software",
+        "finite element analysis (fea)",
+        "computational fluid dynamics (cfd)",
+        "model-based design (mbd)"
+      ]
+    },
+    {
+      "category": "Engineering Design & Principles",
+      "sub_skills": [
+        "mechanical design",
+        "system design",
+        "design thinking",
+        "system architecture",
+        "requirements gathering",
+        "specification writing",
+        "prototyping",
+        "materials science",
+        "thermodynamics",
+        "fluid mechanics",
+        "stress analysis",
+        "product development",
+        "tolerancing",
+        "gd&t (geometric dimensioning and tolerancing)",
+        "material selection",
+        "failure analysis",
+        "nondestructive testing (ndt)",
+        "fatigue analysis",
+        "fracture mechanics",
+        "composites",
+        "polymers",
+        "ceramics",
+        "metallurgy",
+        "systems engineering",
+        "value engineering",
+        "ergonomics",
+        "industrial design"
+      ]
+    },
+    {
+      "category": "Manufacturing & Operations",
+      "sub_skills": [
+        "lean manufacturing",
+        "manufacturing processes",
+        "supply chain management",
+        "process optimization",
+        "manufacturing engineering",
+        "supply chain optimization",
+        "logistics",
+        "inventory management",
+        "asset management"
+      ]
+    },
+    {
+      "category": "Quality & Regulatory Compliance",
+      "sub_skills": [
+        "six sigma",
+        "quality assurance (qa)",
+        "quality control",
+        "quality management systems (qms)",
+        "iso standards",
+        "fda regulations",
+        "gmp (good manufacturing practices)",
+        "environmental regulations",
+        "safety regulations",
+        "occupational health and safety (ohs)",
+        "compliance (e.g., gdpr, hipaa)",
+        "verification and validation (v&v)",
+        "statistical process control (spc)"
+      ]
+    },
+    {
+      "category": "Electrical & Electronics Engineering",
+      "sub_skills": [
+        "electrical circuit design",
+        "control systems",
+        "embedded systems",
+        "plc programming",
+        "circuit design",
+        "power systems",
+        "battery technology",
+        "power electronics",
+        "rf engineering",
+        "antenna design",
+        "semiconductor physics",
+        "circuit board design (pcb)",
+        "vlsi design",
+        "analog design",
+        "digital design",
+        "firmware development",
+        "real-time operating systems (rtos)",
+        "instrumentation",
+        "sensors",
+        "actuators",
+        "data acquisition (daq)"
+      ]
+    },
+    {
+      "category": "Robotics & Automation",
+      "sub_skills": [
+        "robotics",
+        "automation",
+        "robot operating system (ros)",
+        "kinematics",
+        "dynamics",
+        "path planning",
+        "control algorithms",
+        "vision systems (robotics)",
+        "manipulator design",
+        "end-effector design",
+        "industrial robots",
+        "collaborative robots (cobots)"
+      ]
+    },
+    {
+      "category": "Civil & Environmental Engineering",
+      "sub_skills": [
+        "structural analysis",
+        "geospatial analysis (gis)",
+        "urban planning",
+        "bridge design",
+        "road design",
+        "water resources engineering",
+        "wastewater treatment",
+        "air pollution control",
+        "environmental impact assessment (eia)",
+        "sustainability engineering",
+        "life cycle assessment (lca)",
+        "renewable resource management",
+        "waste management",
+        "remediation technologies",
+        "air quality modeling",
+        "water quality modeling",
+        "hydrogeology",
+        "geotechnical engineering",
+        "traffic engineering",
+        "transportation planning",
+        "construction management",
+        "building information modeling (bim)",
+        "structural steel design",
+        "concrete design",
+        "geology",
+        "surveying",
+        "urban infrastructure",
+        "bridge inspection",
+        "pavement design",
+        "railway engineering",
+        "port and harbor engineering",
+        "airport design",
+        "hydraulic engineering",
+        "coastal engineering",
+        "hazardous waste management",
+        "hvac systems"
+      ]
+    },
+    {
+      "category": "Chemical & Process Engineering",
+      "sub_skills": [
+        "heat transfer",
+        "mass transfer",
+        "reaction engineering",
+        "process control",
+        "process safety management (psm)",
+        "chemical process design",
+        "reactor design",
+        "separation processes",
+        "p&id development"
+      ]
+    },
+    {
+      "category": "Aerospace & Defense Engineering",
+      "sub_skills": [
+        "autonomous vehicles",
+        "drone technology",
+        "gps",
+        "lidar",
+        "radar",
+        "sensor fusion",
+        "navigation systems",
+        "propulsion systems",
+        "aerodynamics",
+        "aircraft design",
+        "spacecraft design",
+        "orbital mechanics",
+        "avionics",
+        "flight control systems",
+        "unmanned aerial vehicles (uavs)",
+        "rocket propulsion",
+        "astrodynamics",
+        "satellite communication",
+        "telemetry",
+        "ground support equipment (gse)"
+      ]
+    },
+    {
+      "category": "Biomedical Engineering & Life Sciences",
+      "sub_skills": [
+        "bioreactors",
+        "drug delivery systems",
+        "medical device design",
+        "biomaterials",
+        "biomechanics",
+        "bioinformatics",
+        "genomics",
+        "proteomics"
+      ]
+    },
+    {
+      "category": "Renewable Energy",
+      "sub_skills": [
+        "renewable energy systems",
+        "solar energy",
+        "wind energy",
+        "geothermal energy"
+      ]
+    },
+    {
+      "category": "Project & Business Management",
+      "sub_skills": [
+        "project management",
+        "agile methodologies",
+        "scrum",
+        "research and development",
+        "risk management",
+        "feasibility studies",
+        "cost analysis",
+        "budgeting",
+        "vendor management",
+        "client management",
+        "stakeholder management",
+        "enterprise resource planning (erp)",
+        "sap",
+        "oracle erp",
+        "crm software",
+        "salesforce"
+      ]
+    },
+    {
+      "category": "Interpersonal & Soft Skills",
+      "sub_skills": [
+        "communication",
+        "problem-solving",
+        "critical thinking",
+        "teamwork",
+        "leadership",
+        "attention to detail",
+        "adaptability",
+        "time management",
+        "innovation",
+        "troubleshooting",
+        "root cause analysis (rca)",
+        "negotiation",
+        "presentation skills",
+        "public speaking",
+        "cross-functional collaboration",
+        "mentoring",
+        "coaching",
+        "conflict resolution",
+        "emotional intelligence",
+        "adaptability to change",
+        "learning agility"
+      ]
+    },
+    {
+      "category": "Emerging & Advanced Technologies",
+      "sub_skills": [
+        "digital twins",
+        "internet of things (iot)",
+        "blockchain",
+        "quantum computing (emerging)",
+        "predictive maintenance",
+        "cybersecurity",
+        "penetration testing",
+        "cryptography",
+        "network security",
+        "ethical hacking"
+      ]
+    },
+    {
+      "category": "General Tools & Software",
+      "sub_skills": [
+        "technical documentation",
+        "excel (advanced)",
+        "report writing"
+      ]
+    }
+  ]
+}
