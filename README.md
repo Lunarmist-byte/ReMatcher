@@ -16,7 +16,7 @@ A backend REST API built with Flask that allows users to upload their resume PDF
 ## Project Structure
 
 ReMatcher/
-├── backend/
+|── backend/
 │ ├── app.py # Flask API server
 │ ├── resume_parser.py # PDF text extraction logic
 │ ├── requirements.txt # Python dependencies
