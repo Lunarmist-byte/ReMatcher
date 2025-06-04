@@ -1,70 +1,111 @@
-# Resume Matcher API
+# ReMatcher: Resume Matcher API
 
 A backend REST API built with Flask that allows users to upload their resume PDF, extracts text content from the resume, and prepares the data for future skill matching and job recommendation features.
 
----
+-----
 
 ## Features
 
-- Upload resume PDF via `/upload` endpoint
-- Extracts text from PDF resumes using PyMuPDF
-- Returns the extracted resume text in JSON format
-- Clean, modular codebase to extend for skill extraction and job matching
+  * **Upload Resume PDF:** Easily upload your resume PDF via the `/upload` endpoint.
+  * **Text Extraction:** Extracts text from PDF resumes using the efficient PyMuPDF library.
+  * **JSON Output:** Returns the extracted resume text in a clean JSON format.
+  * **Modular Design:** Built with a clean, modular codebase, making it easy to extend for future skill extraction and job matching functionalities.
 
----
+-----
 
 ## Project Structure
 
+```
 ReMatcher/
 ├── backend/
-│ ├── app.py # Flask API server
-│ ├── resume_parser.py # PDF text extraction logic
-│ ├── requirements.txt # Python dependencies
-├── README.md # Project overview and usage
-├── .gitignore # Files/folders to ignore in git
+│   ├── app.py              # Flask API server
+│   ├── resume_parser.py    # PDF text extraction logic
+│   ├── requirements.txt    # Python dependencies
+├── README.md               # Project overview and usage
+├── .gitignore              # Files/folders to ignore in git
+```
 
-
----
+-----
 
 ## Setup Instructions
 
-1. Clone the repo
-git clone https://github.com/Lunarmist-byte/ReMatcher.git
-cd ReMatcher/backend
+Follow these steps to get the API up and running on your local machine:
 
-2. Create A Virtual Enviornment
-python -m venv venv
+1.  **Clone the Repository:**
 
-# Windows
-venv\Scripts\activate
+    ```bash
+    git clone https://github.com/Lunarmist-byte/ReMatcher.git
+    cd ReMatcher/backend
+    ```
 
-# macOS/Linux
-source venv/bin/activate
+2.  **Create a Virtual Environment:**
 
-3. Install Requirements.txt
-pip install -r requirements.txt
+    ```bash
+    python -m venv venv
+    ```
 
-4. Running the API
-python app.py
-(default server at 127.0.0.1:5000)
+3.  **Activate the Virtual Environment:**
 
-How to Use
-Send a POST request to /upload with form-data:
-Key: resume
-Value: Your PDF resume file
-Example cURL (Windows PowerShell):
+      * **Windows:**
+        ```bash
+        venv\Scripts\activate
+        ```
+      * **macOS/Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+
+4.  **Install Dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5.  **Run the API:**
+
+    ```bash
+    python app.py
+    ```
+
+    The API will be running on `http://127.0.0.1:5000` by default.
+
+-----
+
+## How to Use
+
+Send a `POST` request to the `/upload` endpoint with your PDF resume file as `form-data`.
+
+  * **Key:** `resume`
+  * **Value:** Your PDF resume file
+
+### Example cURL (Windows PowerShell):
+
+```powershell
 curl.exe -X POST http://127.0.0.1:5000/upload -F "resume=@C:/path/to/your/resume.pdf"
-Response:
+```
+
+### Response Example:
+
+```json
 {
   "resume_text": "Extracted resume text here..."
 }
+```
 
-Next Steps (Coming Soon)
-Skill extraction from resume text
-Job matching based on extracted skills
-Frontend UI to upload and display results
+-----
 
-License
-This project is licensed under the MIT License.
+## Next Steps (Coming Soon\!)
 
-Made with 💻 and ☕ by Lunarmist-byte
+  * Skill extraction from resume text.
+  * Job matching based on extracted skills.
+  * Frontend UI to upload resumes and display results.
+
+-----
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file (if you have one, otherwise consider adding it\!) for details.
+
+-----
+
+Made with 💻 and ☕ by [Lunarmist-byte](https://github.com/Lunarmist-byte)
