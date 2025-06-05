@@ -18,8 +18,9 @@ def match_skills(text):
     for skill, category in all_skills:
         pattern=r'\b' + re.escape(skill)+r'\b'
         #for exact matching
-        if re.search(pattern,text):
+        if re.search(pattern,text) and skill not in seen:
             matched.append((skill,category))
+            seen.add(skill)
     return matched
 if __name__ == "__main__":
     sample_resume_text = """

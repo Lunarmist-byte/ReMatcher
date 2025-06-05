@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Software Engineer",
+        "company": "TechCorp",
+        "description": "Title: Software Engineer \nCompany: Tech Innovators Inc. \n \nDescription: \nWe are looking for a skilled Software Engineer proficient in Python, Java, and SQL.  \nThe candidate should have experience with cloud technologies like AWS and containerization tools \nsuch as Docker. \n \nRequired Skills: \n- Python \n- Java \n- SQL \n- AWS \n- Docker \n",
+        "skills": [
+            "python",
+            "java",
+            "sql",
+            "docker",
+            "aws"
+        ]
+    }
+]

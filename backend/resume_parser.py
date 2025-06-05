@@ -2,9 +2,7 @@ import fitz
 def extract_from_pdf_py(file_path):
     try:
         doc=fitz.open(file_path)
-        text=""
-        for page in doc:
-            text+=page.get_text()
+        text="".join(page.get_text() for page in doc)
         return text
     except Exception as e:
         return f"error parsing,get some help from the dumbass who coded this,send this too:{e}"
