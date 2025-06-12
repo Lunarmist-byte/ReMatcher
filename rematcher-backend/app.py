@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 #no dev has made nothing in python without flask and a damn server
 from resume_parser import extract_from_pdf_py
 #calling ma homie resumeparser.py fr
-from matcher import match_skills
+from matcher import compute_similarity
 import os
 import json
 #we have the gods here now, please provide me resource and json(he is happy to be included)
@@ -13,7 +13,7 @@ JOBS_FILE='jobs.json'
 
 UPLOAD_FOLDER="uploads" #put your resumes for my dumb code here
 os.makedirs(UPLOAD_FOLDER,exist_ok=True)#if no folder creates a place for dropping those lies
-
+last_resume_text=None#we going global boyss
 #now we make a apiendpoint to upload to the MNC gods(if they want this shitty ahh code)
 @app.route('/upload',methods=['POST'])
 def upload_file():
@@ -48,6 +48,12 @@ def upload_file():
     else:
         return jsonify({'error':"gng u fucked up, check if the on ethat u sent to be rizzed is a resume or job"}),400
 #flask be getting turned on gng
+def match_jobs():
+    if 'last_resume_text' not in globals():
+        return jsonify({'error':'No file gng'}),400
+    jobs=load_jobs()
+    matches=compute_similarity(last_resume_text,jobs)
+    return jsonify({'matches':matches})
 def load_jobs():
     if os.path.exists(JOBS_FILE):
         with open(JOBS_FILE,'r') as f:
@@ -56,6 +62,7 @@ def load_jobs():
 def save_jobs(jobs):
     with open(JOBS_FILE,'w') as f:
         json.dump(jobs,f,indent=4)
+@app.route('/match',methods=['GET'])
 if __name__=='__main__':
     app.run(debug=True)
     #if my boy fumbles we getting the stats

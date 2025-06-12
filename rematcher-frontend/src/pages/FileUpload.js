@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
+import {ResultsContext} from '../context/ResultsContext';
 
 const FileUpload=()=>{
 
  const [file, setFile]=useState(null);
  const [fileType, setFileType]=useState('resume');
- const [response, setResponse]=useState(null);
+ const [response, setResults]=useContext(ResultsContext);
 
  const handleupload=async()=>{
     if (!file) return alert('Gng upload something fr');
 
     const formData=new FormData();
     formData.append('file',file);
-    formData.append('file_type',fileType); // small fix: backend expects 'file_type'
+    formData.append('file_type',fileType);
 
     try{
         const res=await axios.post('http://localhost:5000/upload',formData);
@@ -34,12 +35,12 @@ const FileUpload=()=>{
           <option value="job">Job Description</option>
         </select>
       </div>
-      <button className="btn btn-primary" onClick={handleupload}>Upload</button>
+      <button className="btn btn-primary"onClick={handleupload}>Upload</button>
 
       {response && (
         <div className="mt-4">
           <h5>Response:</h5>
-          <pre style={{ whiteSpace: 'pre-wrap' }}>{JSON.stringify(response, null, 2)}</pre>
+          <pre style={{ whiteSpace:'pre-wrap'}}>{JSON.stringify(response,null,2)}</pre>
         </div>
       )}
     </div>
