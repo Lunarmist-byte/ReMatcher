@@ -6,7 +6,7 @@ const LoginPage=()=>{
     const navigate=useNavigate();
 
     const handleLogin=()=>{
-        if(pw='admin123'){
+        if(password==='admin123'){
             localStorage.setItem('authToekn','supersecuretokenlol');
             navigate('/admin/match');
         }else alert('nah no aura wrong ahh pass')

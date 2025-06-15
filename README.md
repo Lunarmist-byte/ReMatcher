@@ -11,7 +11,8 @@ A backend REST API built with Flask that allows users to upload their resume PDF
   * **JSON Output:** Returns the extracted resume text in a clean JSON format.
   * **Modular Design:** Built with a clean, modular codebase, making it easy to extend for future skill extraction and job matching functionalities.
   * **Skill Matching:** Matches skills to the extarcted text using an inbuilt skills.json file(maybe implemented as a db in future according to purpose).
-* **Front End UI:** Front end UI is a react based one with a modular design
+  * **Front End UI:** Front end UI is a react based one with a modular design
+  * **Job Matching Login:** Job Matching based on NLP
 -----
 ## Note
 **This project is Untested and Not Finished atm**
@@ -25,6 +26,7 @@ ReMatcher/
 │   ├── resume_parser.py    # PDF text extraction logic
 │   ├── requirements.txt    # Python dependencies
 |   ├── matcher.py          # Matching skills from the resume
+├── frontend/               #has a lot of frontend files
 ├── README.md               # Project overview and usage
 ├── .gitignore              # Files/folders to ignore in git
 ```
@@ -104,8 +106,6 @@ curl.exe -X POST http://127.0.0.1:5000/upload -F "resume=@C:/path/to/your/resume
 -----
 
 ## Next Steps (Coming Soon\!)
-
-  * Job matching based on extracted skills.
   * Employer can add jobs
     
 -----

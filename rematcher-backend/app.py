@@ -10,7 +10,7 @@ import json
 #we have the gods here now, please provide me resource and json(he is happy to be included)
 app=Flask(__name__)#main character enters
 JOBS_FILE='jobs.json'
-
+AUTH_TOKEN="supersecuretokenlol"
 UPLOAD_FOLDER="uploads" #put your resumes for my dumb code here
 os.makedirs(UPLOAD_FOLDER,exist_ok=True)#if no folder creates a place for dropping those lies
 last_resume_text=None#we going global boyss
@@ -48,7 +48,11 @@ def upload_file():
     else:
         return jsonify({'error':"gng u fucked up, check if the on ethat u sent to be rizzed is a resume or job"}),400
 #flask be getting turned on gng
+@app.route('/match',methods=['GET'])
 def match_jobs():
+    auth=request.headers.get('Authorization')
+    if auth!=f"Bearer {AUTH_TOKEN}":
+        return jsonify({'error':'Unauthorized, U aint the sigmabro'}),401
     if 'last_resume_text' not in globals():
         return jsonify({'error':'No file gng'}),400
     jobs=load_jobs()
@@ -62,7 +66,6 @@ def load_jobs():
 def save_jobs(jobs):
     with open(JOBS_FILE,'w') as f:
         json.dump(jobs,f,indent=4)
-@app.route('/match',methods=['GET'])
 if __name__=='__main__':
     app.run(debug=True)
     #if my boy fumbles we getting the stats

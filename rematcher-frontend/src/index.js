@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import {ResultsProvider} from './context/ResultsContext';
-import 'bootstrap/dist/css/bootstrap.min.css';
+const root=ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.render(
+root.render(
     <ResultsProvider>
         <App/>
-    </ResultsProvider>
-    document.getElementById('root')
+    </ResultsProvider>,
 );
